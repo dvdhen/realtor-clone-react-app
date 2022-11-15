@@ -7,7 +7,7 @@ export default function SignIn() {
 
   const [showPassword, setShowPassword] = useState(false)
 
-  const [formDAta, setFormData] = useState({
+  const [formData, setFormData] = useState({
     email: "",
     password: "",
   });

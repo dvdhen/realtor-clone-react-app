@@ -6,9 +6,12 @@ import SignUp from './pages/SignUp';
 import Offers from './pages/Offers';
 import ForgotPassword from './pages/ForgotPassword';
 import Header from './components/Header';
+import { ToastContainer } from 'react-toastify'; // for error notification
+import 'react-toastify/dist/ReactToastify.css'; // for error notification
 
 function App() {
   return (
+    <>
     <Router>
       <Header/>
       <Routes>
@@ -20,6 +23,19 @@ function App() {
      <Route path = "/pass-word" element = {<ForgotPassword/>} />
      </Routes>
     </Router>
+    <ToastContainer
+    position="top-right"
+    autoClose={5000}
+    hideProgressBar={false}
+    newestOnTop={false}
+    closeOnClick
+    rtl={false}
+    pauseOnFocusLoss
+    draggable
+    pauseOnHover
+    theme="dark"
+    />
+    </>
   );
 }
 
