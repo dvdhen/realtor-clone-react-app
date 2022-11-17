@@ -1,6 +1,5 @@
 import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
 import { doc, getDoc, serverTimestamp, setDoc } from 'firebase/firestore'
-import React from 'react'
 import {FcGoogle} from "react-icons/fc"
 import { toast } from 'react-toastify'
 import { db } from '../firebase'
